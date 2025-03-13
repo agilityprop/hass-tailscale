@@ -40,6 +40,7 @@ schema:
   login_server: url?
   proxy: bool?
   proxy_and_funnel_port: match(^(443|8443|10000)$)?
+  ts_certs: bool?
   snat_subnet_routes: bool?
   stateful_filtering: bool?
   tags:
