@@ -25,6 +25,7 @@ devices:
   - /dev/net/tun
 map:
   - share:rw
+  - ssl:rw
 ports:
   41641/udp: null
 schema:
