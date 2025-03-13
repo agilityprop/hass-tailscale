@@ -69,6 +69,7 @@ log_level: info
 login_server: "https://controlplane.tailscale.com"
 proxy: false
 proxy_and_funnel_port: 443
+ts_certs: false
 snat_subnet_routes: true
 stateful_filtering: false
 tags:
@@ -189,6 +190,14 @@ port 443 (or the port configured in option `proxy_and_funnel_port`)._
 
 **Note:** _If you encounter strange browser behaviour or strange error messages,
 try to clear all site related cookies, clear all browser cache, restart browser._
+
+### Option: `ts_certs`
+
+Requires either Proxy or Funnel feature to be enabled, if set to 'true' a copy of 
+your tailscale SSL certificate and private key will be saved in your Home Assistant
+ssl directory ready to be imported into other add-ons as may be necessary.
+
+This option is set as 'false' by default.
 
 ### Option: `log_level`
 
