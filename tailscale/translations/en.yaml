@@ -68,6 +68,11 @@ configuration:
       internet.
       Only ports 443, 8443, and 10000 are allowed by Tailscale.
       When not set, port 443 is used by default.
+  share_service_name:
+    name: Service tag
+    description: >-
+      This option will connect this Home Assistant instance to a pre-defined service on 
+      your Tailnet under this tag. See Tailscale services documentation for more information.
   snat_subnet_routes:
     name: Source NAT subnet routes
     description: >-
